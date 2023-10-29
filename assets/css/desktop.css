@@ -1,0 +1,129 @@
+@media only screen and (min-width: 1024px) {
+
+    .mobile-header,
+    .tablet-header,
+    .mobile-footer {
+        display: none;
+    }
+
+    .desktop-header {
+        width: 17%;
+        height: 100vh;
+        position: fixed;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-right: 1px solid gray;
+        padding: 20px;
+    }
+
+    .desktop-menu,
+    .desktop-features {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .desktop-menu a,
+    .desktop-features a {
+        transition: 0.2s;
+    }
+
+    .desktop-menu a:hover,
+    .desktop-features a:hover {
+        background-color: gainsboro;
+        border-radius: 10px;
+        transform: scale(1.005);
+    }
+
+    .desktop-links,
+    .desktop-logo {
+        display: flex;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+    .desktop-logo {
+        width: 150px;
+    }
+
+    .desktop-links span {
+        margin-left: 20px;
+    }
+
+    .desktop-links img {
+        width: 25px;
+    }
+
+    .desktop-links img[src$='.jpg'] {
+        border-radius: 50%;
+    }
+
+    .header-nav {
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        padding: 50px 0 20px 0;
+        overflow-x: auto;
+        background-color: white;
+    }
+
+    .right-side {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 250px;
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .accounts {
+        display: flex;
+        align-items: center;
+    }
+
+    .accounts-name {
+        margin-left: 10px;
+    }
+
+    .accounts-name span {
+        font-weight: 500;
+    }
+
+    .accounts img {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .switch span {
+        color: blue;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .suggested {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    article {
+        position: static;
+        margin-left: 17%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 30%;
+    }
+}

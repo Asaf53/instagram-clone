@@ -1,0 +1,55 @@
+#slider {
+    overflow: hidden;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -300%;
+    }
+    80% {
+        left: -300%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+#slider figure {
+    width: 400%;
+    position: relative;
+    animation: 15s slider infinite;
+}
+
+#slider figure:hover {
+    animation-play-state: paused;
+}
+
+#slider figure img {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
