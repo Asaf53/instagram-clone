@@ -98,15 +98,23 @@
         font-weight: 500;
     }
 
+    .accounts-name .followed {
+        font-size: 12px;
+    }
+
     .accounts img {
         width: 50px;
         border-radius: 50%;
     }
 
-    .switch span {
+    .switch a {
         color: blue;
         font-size: 12px;
         font-weight: 500;
+    }
+
+    .switch a:hover {
+        color: rgb(0, 0, 80);
     }
 
     .suggested {
@@ -115,6 +123,33 @@
         justify-content: space-between;
         font-size: 12px;
         margin-bottom: 20px;
+    }
+
+    .pages {
+        margin-bottom: 20px;
+    }
+
+    .pages ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .pages ul li {
+        display: inline;
+    }
+
+    .pages ul li a, .copyright span {
+        font-size: 12px;
+        color: rgb(190, 190, 190);
+    }
+
+    .pages ul li:not(:last-child)::after {
+        content: " . ";
+        color: rgb(190, 190, 190);
+    }
+
+    .pages ul li a:hover {
+        text-decoration: underline;
     }
 
     article {
