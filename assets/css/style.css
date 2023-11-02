@@ -1,13 +1,16 @@
 @import url('mobile.css');
 @import url('tablet.css');
 @import url('desktop.css');
-@import url('carousel.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: Robotos;
+    src: url('/assets/fonts/Roboto-Regular.ttf');
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Robotos;
 }
 
 body {
@@ -65,10 +68,6 @@ a {
     margin-left: 10px;
 }
 
-/* .post-image {
-    aspect-ratio: 1/1;
-} */
-
 .post-image img {
     width: 100%;
 }
@@ -80,7 +79,7 @@ a {
     padding: 5px 20px;
 }
 
-.post-footer .description a{
+.post-footer .description a {
     font-weight: 700;
     margin-right: 5px;
 }
@@ -121,3 +120,64 @@ a {
 ::-webkit-scrollbar-thumb {
     background: gray;
 }
+
+/* carousel transitions start */
+#slider {
+    overflow: hidden;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -300%;
+    }
+
+    80% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+#slider figure {
+    width: 400%;
+    position: relative;
+    animation: 15s slider infinite;
+}
+
+#slider figure:hover {
+    animation-play-state: paused;
+}
+
+#slider figure img {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+/* carousel transitions end */
