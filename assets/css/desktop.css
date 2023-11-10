@@ -9,13 +9,13 @@
     .desktop-header {
         width: 17%;
         height: 100vh;
-        position: fixed;
-        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-right: 1px solid gray;
+        position: fixed;
         padding: 20px;
+        background-color: white;
+        border-right: 1px solid gray;
     }
 
     .desktop-menu,
@@ -63,9 +63,8 @@
 
     .header-nav {
         width: 40%;
-        margin: 0 auto;
-        position: relative;
         display: flex;
+        margin: 0 auto;
         padding: 50px 0 20px 0;
         overflow-x: auto;
         background-color: white;
@@ -154,12 +153,10 @@
     }
 
     article {
-        position: static;
-        margin-left: 17%;
-        background-color: white;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
         width: 30%;
+        margin: 0 auto;
+        background-color: white;
     }
 }

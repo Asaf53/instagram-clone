@@ -32,11 +32,11 @@
     }
 
     .header-nav {
-        background-color: white;
         display: flex;
         align-items: center;
         padding: 10px 0px 10px 20px;
         overflow-x: auto;
+        background-color: white;
         border-bottom: 1px solid gray;
     }
 
@@ -46,11 +46,11 @@
 
     .mobile-footer {
         position: fixed;
+        display: flex;
+        justify-content: space-evenly;
         bottom: 0;
         width: 100%;
-        display: flex;
         align-items: center;
-        justify-content: space-evenly;
         padding: 10px 0;
         background-color: white;
     }
