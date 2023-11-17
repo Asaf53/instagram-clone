@@ -107,7 +107,7 @@
     }
 
     .switch a {
-        color: blue;
+        color: rgb(0, 153, 255);
         font-size: 12px;
         font-weight: 500;
     }
