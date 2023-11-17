@@ -42,6 +42,14 @@ a {
     outline: 3px solid red;
 }
 
+.short-text {
+    width: 70px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .post-header {
     display: flex;
     justify-content: space-between;
@@ -66,10 +74,6 @@ a {
 
 .post-logo span {
     margin-left: 10px;
-}
-
-.post-image img {
-    width: 100%;
 }
 
 .post-footer {
